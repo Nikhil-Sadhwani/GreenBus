@@ -1,0 +1,224 @@
+
+.background-radial-gradient {
+
+    background-color: hsl(172deg 55% 53%);
+    background-image: radial-gradient(700px circle at 0% 0%,
+            hsl(174deg 53% 53%) 15%,
+            hsl(173deg 49% 50%) 35%,
+            rgb(53, 177, 166) 75%,
+            rgb(68, 201, 197) 80%,
+            transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+            rgba(108, 218, 205, 0.904) 15%,
+            rgb(53, 206, 183) 35%,
+            rgb(95, 200, 200) 75%,
+            hsl(173deg 54% 53%) 80%,
+            transparent 100%);
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#35cfc2, #1ffbff);
+    overflow: hidden;
+}
+
+#radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#27cdbf, #1ff0ff);
+    overflow: hidden;
+}
+
+.bg-glass {
+    background-color: hsla(176, 63%, 95%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(60px);
+}
+
+
+/*content style end*/
+
+
+#footer {
+    padding: 40px 0;
+    background-color: #00B1AA;
+}
+
+#footer p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer p a:hover {
+    text-decoration: none;
+}
+
+/* credit card */
+.container-flip {
+    /* min-height: 100vh; */
+    /* background: #eee; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-flow: column; */
+    /* padding-bottom: 60px; */
+}
+
+.container-flip form {
+    /* background: #fff; */
+    border-radius: 5px;
+    /* box-shadow: 0 10px 15px rgba(0, 0, 0, .1); */
+    padding: 20px;
+    /* width: 600px; */
+    padding-top: 39px;
+}
+
+.container-flip form .inputBox {
+    margin-top: 20px;
+}
+
+.container-flip form .inputBox span {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+}
+
+.container-flip form .inputBox input,
+.container-flip form .inputBox select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
+}
+
+.container-flip form .flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.container-flip form .flexbox .inputBox {
+    flex: 1 1 150px;
+}
+
+.container-flip form .submit-btn {
+    width: 100%;
+    background: linear-gradient(45deg, #2be2d9, #29887d);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+    border: none;
+}
+
+.container-flip form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.container-flip .card-container {
+    margin-bottom: -48px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.container-flip .card-container .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #2be2d9, #29887d);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 20px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+
+.container-flip .card-container .front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.container-flip .card-container .front .image img {
+    height: 50px;
+}
+
+.container-flip .card-container .front .card-number-box {
+    padding: 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.container-flip .card-container .front .flexbox {
+    display: flex;
+}
+
+.container-flip .card-container .front .flexbox .box:nth-child(1) {
+    margin-right: auto;
+}
+
+.container-flip .card-container .front .flexbox .box {
+    font-size: 15px;
+    color: #fff;
+}
+
+.container-flip .card-container .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #2be2d9, #29887d);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+.container-flip .card-container .back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container-flip .card-container .back .box {
+    padding: 0 20px;
+}
+
+.container-flip .card-container .back .box span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.container-flip .card-container .back .box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.container-flip .card-container .back .box img {
+    margin-top: 30px;
+    height: 30px;
+}
